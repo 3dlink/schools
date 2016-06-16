@@ -27,7 +27,7 @@
 			</div>
 
 			<div class="input_content animated">
-				<label>Your position in the club</label>
+				<label>Your position in the school</label>
 					<?php echo $this->Form->input('position',array('class'=>'input_clubs','placeholder'=>'','id'=>'position','label'=>false)); ?>
 			</div>
 
@@ -56,21 +56,16 @@
 		<hr>
 		</div>
 		<div id="club_details" class="col-md-6 animated">
-			<h3>CLUB DETAILS</h3>
+			<h3>SCHOOL DETAILS</h3>
 
 			<div class="input_content animated">
-				<label>Name of your club</label>
-					<?php echo $this->Form->input('club_name',array('class'=>'input_clubs','placeholder'=>'','id'=>'club_name','label'=>false)); ?>
+				<label>Name of your school</label>
+					<?php echo $this->Form->input('school_name',array('class'=>'input_clubs','placeholder'=>'','id'=>'club_name','label'=>false)); ?>
 			</div>
 
 			<div class="input_content animated">
-				<label>Sport</label>
-					<?php echo $this->Form->input('sport',array('class'=>'input_clubs','id'=>'sports','label'=>false,'type'=>'select','options'=>array(''=>'','Rugby'=>'Rugby','Cricket'=>'Cricket','Netball'=>'Netball','Tennis'=>'Tennis','Basketball'=>'Basketball','Field hockey'=>'Field hockey'))); ?>
-			</div>
-
-			<div class="input_content animated">
-				<label style="font-size: 18px;">Number of club members</label>
-					<?php echo $this->Form->input('members',array('class'=>'input_clubs','id'=>'nums_members','label'=>false,'type'=>'select','options'=>array(''=>'','1-100'=>'1-100','101-300'=>'101-300','301-600'=>'301-600','601-1,000'=>'601-1,000','1,001+'=>'1,001+'))); ?>
+				<label style="font-size: 18px;">Size of your school</label>
+					<?php echo $this->Form->input('size',array('class'=>'input_clubs','id'=>'nums_members','label'=>false,'type'=>'select','options'=>array(''=>'','1 - 500'=>'1 - 500','501 - 1,000'=>'501 - 1,000','1,001 - 2,000'=>'1,001 - 2,000','2,001 - 3,000'=>'2,001 - 3,000','3,001+'=>'3,001+'))); ?>
 			</div>
 
 			<div class="input_content animated">

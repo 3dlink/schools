@@ -19,7 +19,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Clubs
+		Schools
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -28,7 +28,7 @@
 		echo $this->Html->css('bootstrap.min');
 		// echo $this->Html->css('materialize.min');
 		echo $this->Html->css('animate');
-		echo $this->Html->css('clubs');
+		echo $this->Html->css('schools');
 		echo $this->Html->script('jquery-2.2.0.min');
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('parallax');

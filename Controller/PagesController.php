@@ -80,13 +80,14 @@ class PagesController extends AppController {
 	}
 
 	public function apply(){
-		
+
 	}
 
 	public function confirmation($id = null){
 		if (!$this->Application->exists($id)) {
 			throw new NotFoundException(__('Invalid application'));
 		}
+		$this->set('application',$this->Application->findById($id));
 		$this->set('id',$id);
 	}
 

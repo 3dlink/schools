@@ -601,13 +601,13 @@ h2{
 }
 
 #personal_contact{
-	padding-right: 145px;
+	padding-right: 125px;
 	text-align: left;
 	position: relative;
 }
 
 #club_details{
-	padding-left: 145px;
+	padding-left: 125px;
 	text-align: right;
 }
 
@@ -657,7 +657,7 @@ h3{
   font-weight:thin;
   border: none;
   font-style: italic;
-  color: #808285;
+  color: black;
   height: 35px;
   padding-left: 10px;
 }
@@ -748,7 +748,7 @@ hr{
 
 form .btn_clubs{
 	width: 100% !important;
-	margin-bottom: 205px; 
+	margin-bottom: 205px;
 	    padding-left: 10px;
 }
 
@@ -773,8 +773,10 @@ form .btn_clubs{
   font-size: 25px;
   text-align: center;
   color: white;
-  float: left;
+  display: table;
   width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 60px;
 }
@@ -785,7 +787,7 @@ to{opacity: 1;}
 }
 
 @-webkit-keyframes fadein {
-	from { 
+	from {
 		opacity: 0;
 	}
 	to {
@@ -793,7 +795,7 @@ to{opacity: 1;}
 	}
 }
 
-.animar {	
+.animar {
 	-webkit-animation-name: fadein;
 	-webkit-animation-duration: 2s;
 }
@@ -820,7 +822,7 @@ to{opacity: 1;}
 }
 
 .btn-pekeupload:after, a:focus, a:hover{
-    text-decoration: none !important;	
+    text-decoration: none !important;
     color: black !important;
 }
 
@@ -868,14 +870,16 @@ to{opacity: 1;}
   padding: 3px 10px !important;
   font-size: 12px;
 }
-
-
-
-
-
 .parallax-window {
     min-height: 800px;
     background: transparent;
+}
+
+#club_details{
+  padding-right: 0 !important;
+}
+#personal_contact{
+  padding-left: 0 !important;
 }
 
 
@@ -911,7 +915,7 @@ to{opacity: 1;}
 
 
 
-    
+
 
 
 /*
@@ -1068,7 +1072,7 @@ to{opacity: 1;}
 /*	#title_gb{
 		font-size: 30px;
 	}*/
-	
+
 	#confirmation > p {
     font-size: 16px;
   }
@@ -1079,7 +1083,7 @@ to{opacity: 1;}
 	h1{
 		font-size: 30px !important;
 	}
-	
+
 
 	#goodbye {
   padding: 120px 20px;
@@ -1097,7 +1101,7 @@ to{opacity: 1;}
 	#kobe > p {
     font-size: 15px;
     margin-right: 10px;
-	}		
+	}
 
 	#whats_contain{
 		width: 100%;
@@ -1113,7 +1117,7 @@ to{opacity: 1;}
 	}
 
 	#haka > div > div{
-		width: 100%; 
+		width: 100%;
 	}
 
 	#bonus {
@@ -1132,7 +1136,7 @@ to{opacity: 1;}
 		width: 100%;
 		padding: 1px 10px;
 	}
-	
+
 	#steps {
     float: left;
     width: 100%;
@@ -1141,7 +1145,7 @@ to{opacity: 1;}
     margin-left: 0px;
 	}
 /*
-	#plan{    
+	#plan{
 		height: 710px;
 	}*/
 
