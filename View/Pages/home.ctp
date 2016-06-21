@@ -3,12 +3,21 @@
 	<img id="logo_home" src="<?php echo $this->webroot; ?>img/logo_home.png">
 	<h1 class="animated">Forget the <br><b>sausage sizzle</b></h1>
 	<button class="animated btn_clubs black_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
-	<p>WATCH SPORT, <b>FUNDRAISE.</b> <br>IT’S THAT EASY</p>
+	<p>WATCH SPORT, <b>SUPPORT YOUR SCHOOL.</b> <br>IT’S THAT EASY</p>
 </section>
+
+
 <section id="goodbye">
-	<h1 id="title_gb" class="animated"><b>SAY GOOD-BYE</b><br>TO MEAT RAFFLES</h1>
-	<p class="animated">With <b>Fan Pass</b> your club earns <b>10% on every<br>subscription</b> your members buy.</p>
+	<img src="<?php echo $this->webroot;?>img/basket.png" style="width: 100%;">
+	<h1 id="title_gb" class="animated"><b>SAY GOOD-BYE</b><br>TO THE GALA</h1>
+	<p class="animated">With <b>Fan Pass</b> your school earns<br><b>10% on every subscription</b>your<br>parents and supporters buy.</p>
 </section>
+<section id="supporters">
+	<img src="<?php echo $this->webroot;?>img/supporters.png">
+</section>
+
+
+
 <section id="kobe" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $this->webroot;?>img/kobeb.png">
 	<!-- <div class="parallax"><img src="<?php echo $this->webroot; ?>img/kobeb.png"></div> -->
 	<h1 class="animated">YOUR CLUB MEMBERS<br><b>GET SPORT FOR LESS</b></h1>
