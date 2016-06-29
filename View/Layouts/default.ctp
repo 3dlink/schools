@@ -26,7 +26,7 @@
 
 		echo $this->Html->css('owl.carousel');
 		echo $this->Html->css('bootstrap.min');
-		echo $this->Html->css('schools');
+		echo $this->Html->css('schools_2');
 		echo $this->Html->css('animate');
 		echo $this->Html->script('jquery-2.2.0.min');
 		echo $this->Html->script('bootstrap.min');
@@ -47,14 +47,14 @@
 			<div onclick="window.location.href='<?php echo $this->webroot;?>'" id="logo"></div>
 			<div id="clubs" class="menu_web"></div>
 			<div onclick="window.location.href='<?php echo $this->webroot;?>#plan'" class="menu_item menu_web">HOW IT WORKS</div>
-			<div onclick="window.location.href='<?php echo $this->webroot;?>#haka'" class="menu_item menu_web">APPLY</div>
-			<div onclick="window.location.href='<?php echo $this->webroot;?>#whats'" class="menu_item menu_web">WHAT IS FAN PASS</div>
+			<div onclick="window.location.href='<?php echo $this->webroot;?>#chrome'" class="menu_item menu_web">APPLY</div>
+			<div onclick="window.location.href='<?php echo $this->webroot;?>#fan_pass'" class="menu_item menu_web">WHAT IS FAN PASS</div>
 			<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_item menu_web">GO TO FAN PASS</div>
 			<div id="burger"></div>
 			<div id="menu_movil">
 				<div onclick="window.location.href='<?php echo $this->webroot;?>#plan'" class="menu_movil">HOW IT WORKS</div>
-				<div onclick="window.location.href='<?php echo $this->webroot;?>#haka'" class="menu_movil">APPLY</div>
-				<div onclick="window.location.href='<?php echo $this->webroot;?>#whats'" class="menu_movil">WHAT IS FAN PASS</div>
+				<div onclick="window.location.href='<?php echo $this->webroot;?>#chrome'" class="menu_movil">APPLY</div>
+				<div onclick="window.location.href='<?php echo $this->webroot;?>#fan_pass'" class="menu_movil">WHAT IS FAN PASS</div>
 				<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_movil">GO TO FAN PASS</div>
 			</div>
 		</div>

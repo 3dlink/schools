@@ -203,3 +203,7 @@ article {
 #footer{
   position: relative !important;
 }
+
+.col-md-4 img {
+  width: 100%;
+}

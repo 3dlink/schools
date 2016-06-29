@@ -30,4 +30,7 @@
 #menu_admin{
   display: none;
 }
+#header{
+  display: none;
+}
 </style>

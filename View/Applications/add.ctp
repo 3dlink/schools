@@ -82,7 +82,7 @@
 		</div>
 
 			<p class="animated">Want to try out <b>FAN PASS</b> yourself for free? </p>
-			<div class="submit animated">
+			<div class="submit">
 				<div id="submit_content">
 					<div class="col-md-6">
 						<label class="left">YES</label>
@@ -93,7 +93,7 @@
 						<input id="no" type="radio" name="check_clubs" value="0" class="radio_clubs right">
 					</div>
 					<input name="data[Application][free]" id="free" hidden value="" type="text">
-					<?php echo $this->Form->button('APPLY NOW', array('class'=>array('btn_clubs','black_trans','animated'),'style'=>'float:left;')); ?>
+					<?php echo $this->Form->button('APPLY NOW', array('class'=>array('btn_clubs','orange_trans','animated'),'style'=>'float:left;')); ?>
 				</div>
 			</div>
 

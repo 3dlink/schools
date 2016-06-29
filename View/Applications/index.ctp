@@ -10,7 +10,6 @@
                   <th>Name</th>
                   <th>Email</th>
                   <th>Club Name</th>
-                  <th>Sport</th>
                   <th>Website</th>
                   <th>Accepted</th>
                   <th></th>
@@ -20,8 +19,7 @@
 									<tr>
                     <td><?php echo h($item['Application']['name'].' '.$item['Application']['last']); ?>&nbsp;</td>
                     <td><?php echo h($item['Application']['email']); ?>&nbsp;</td>
-                    <td><?php echo h($item['Application']['club_name']); ?>&nbsp;</td>
-                    <td><?php echo h($item['Application']['sport']); ?>&nbsp;</td>
+                    <td><?php echo h($item['Application']['school_name']); ?>&nbsp;</td>
                     <td><?php echo h($item['Application']['website']); ?>&nbsp;</td>
                     <td><?php if($item['Application']['active']){echo 'Yes';}else{echo 'No';} ?>&nbsp;</td>
 	                  <td>

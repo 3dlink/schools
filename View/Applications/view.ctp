@@ -1,99 +1,3 @@
-<!-- <div class="applications view">
-<h2><?php echo __('Application'); ?></h2>
-	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Name'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['name']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Last'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['last']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Email'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['email']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Phone'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['phone']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Position'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['position']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Treasurer Name'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['treasurer_name']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Treasurer Email'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['treasurer_email']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Treasurer Phone'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['treasurer_phone']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Club Name'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['club_name']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Sport'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['sport']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Members'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['members']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Website'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['website']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Facebook'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['facebook']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Logo'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['logo']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Free'); ?></dt>
-		<dd>
-			<?php echo h($application['Application']['free']); ?>
-			&nbsp;
-		</dd>
-	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Application'), array('action' => 'edit', $application['Application']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Application'), array('action' => 'delete', $application['Application']['id']), array(), __('Are you sure you want to delete # %s?', $application['Application']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Applications'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Application'), array('action' => 'add')); ?> </li>
-	</ul>
-</div>
- -->
-
 <style type="text/css">
 label{
 	color: black;
@@ -102,7 +6,7 @@ label{
 
 <article class="card shadow-1">
   <fieldset>
-      <legend><b>Application</b><?php echo ': '; if (!empty($application)) { echo '<small>'.$application['Application']['club_name'].'</small>'; }?></legend>
+      <legend><b>Application</b><?php echo ': '; if (!empty($application)) { echo '<small>'.$application['Application']['school_name'].'</small>'; }?></legend>
       <div class="margenesHorizontales">
       	<div>
       		<div class="col-md-4">
@@ -163,24 +67,24 @@ label{
       		</div>
       		<div class="col-md-4">
       			<div class="form-group">
-							<label>Club Name</label>
-              <?php echo h($application['Application']['club_name'])?>
+							<label>School Name</label>
+              <?php echo h($application['Application']['school_name'])?>
 						</div>
       		</div>
       		<div style="clear:both;"></div>
       	</div>
 
       	<div>
-      		<div class="col-md-4">
+      		<!-- <div class="col-md-4">
       			<div class="form-group">
 							<label>Sport</label>
               <?php echo h($application['Application']['sport'])?>
 						</div>
-      		</div>
+      		</div> -->
       		<div class="col-md-4">
       			<div class="form-group">
 							<label>Number of members</label>
-              <?php echo h($application['Application']['members'])?>
+              <?php echo h($application['Application']['size'])?>
 						</div>
       		</div>
       		<div class="col-md-4">
@@ -189,16 +93,17 @@ label{
               <?php echo h($application['Application']['website'])?>
 						</div>
       		</div>
-      		<div style="clear:both;"></div>
-      	</div>
-
-      	<div>
       		<div class="col-md-4">
       			<div class="form-group">
 							<label>Facebook page</label>
               <?php echo h($application['Application']['facebook'])?>
 						</div>
       		</div>
+      		<div style="clear:both;"></div>
+      	</div>
+
+      	<div>
+      		
       		<div class="col-md-4">
       			<div class="form-group">
 							<label>Free</label>

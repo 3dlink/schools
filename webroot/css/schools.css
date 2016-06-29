@@ -59,7 +59,7 @@
   font-style: italic;
 }
 @font-face{
-  font-family: "Gotham";
+  font-family: "Gotham-Book";
   src: url("../fonts/Gotham-Book.otf") format("opentype");
   font-weight:400;
   font-style: normal;
@@ -133,11 +133,16 @@
 
 body {
 	width:100%;
+	max-width: 1920px;
 	margin: 0 auto;
-	font-family: "Gotham";
+	font-family: "Gotham-Book";
   font-weight: normal;
   position: relative;
   overflow-x:hidden;
+  font-size: 15px;
+  background-image: url('../img/textura_basket.png');
+  background-size: contain;
+  background-repeat: round;
 }
 
 #header {
@@ -170,6 +175,35 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+	background: rgba(0,0,0,0.5);
+	padding: 0 200px;
+	background-size: cover;
+}
+
+#footer_2 {
+	font-family: "Gotham";
+  font-weight:400;
+  font-size: 10px;
+  color: white;
+	height: 125px;
+	position: relative;
+  *z-index: 1000;
+  *position: absolute;
+  *bottom: 0;
+  *left: 0;
+  float: left;
+  margin-left: -1px;
+  width: 100%;
+	background-image: url('../img/footer.png');
+	background-size: cover;
+}
+
+#footer_mask{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
 	background: rgba(0,0,0,0.5);
 	padding: 0 200px;
 }
@@ -282,6 +316,7 @@ h1{
   font-size: 50px;
   color: white;
   text-align: center;
+  letter-spacing: 4px;
 }
 
 #home h1{
@@ -310,6 +345,10 @@ h1{
 	background: rgba(0,0,0,0.5);
 }
 
+.orange_trans, .orange_trans:focus{
+	background: rgba(240,90,41,0.5);
+}
+
 .blue_trans, .blue_trans:focus{
 	background: rgba(0,225,225,0.7);
 }
@@ -329,8 +368,9 @@ h1{
   float: left;
   *padding: 90px;
   *background-image: url('../img/basket.png');
-  background-size: cover;
-  height: 1300px;
+  *background-size: cover;
+  *height: 1300px;
+  position: relative;
 }
 
 #supporters{
@@ -347,19 +387,43 @@ h1{
 	width: 100%;
 }
 
-#goodbye p {
-  font-family: "Gotham";
-  font-weight: 400;
-  font-size: 20px;
-  color: black;
+section p, #bonus p {
+  font-family: "Gotham-Book";
+  font-size: 15px;
+  color: white;
   text-align: center;
   margin-top: 40px;
   letter-spacing: 2px;
 }
 
-#goodbye h1{
-	color: #00e1ff;
-  margin-bottom: 50px;
+#title_gb{
+	color: white;
+  margin-bottom: 50px;    
+  margin-top: 205px;
+}
+
+#title_zv{
+	color: white;
+  margin-bottom: 50px;    
+  margin-top: 100px;
+}
+
+#title_w{
+	color: white;
+  margin-bottom: 90px;    
+  margin-top: 100px;
+}
+
+#title_b{
+	color: white;
+  margin-bottom: 40px;    
+  text-align: right;
+}
+
+#title_s{
+	color: black;
+  margin-bottom: 40px; 
+      line-height: 1.5; 
 }
 
 #kobe{
@@ -473,26 +537,6 @@ h1 b {
   text-align: center;
   color: white;
 }
-
-#bonus{
-	width: 100%;
-	float: left;
-	padding: 75px 200px;
-	background-image: url('../img/bonus.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-	height: 560px;
-}
-
-#bonus h1{
-	font-size: 50px;
-	font-weight: 100;
-	text-align: right;
-	margin-bottom: 65px;
-	letter-spacing: 3px;
-}
-
 #clubsin{
 	width: 100%;
 	float: left;
@@ -546,22 +590,22 @@ h1 b {
 }
 
 #chromecast {
-  position: absolute;
-  bottom: -195px;
-  left: 95px;
-  z-index: 99;
+  width: 445px;
+  float: left;
+  margin-top: 24%;
 }
 
 #plan{
 	width: 100%;
 	float: left;
-	padding: 90px 80px;
-	background-image: url('../img/tenis.png');
+	*padding: 90px 80px;
+	/*background-image: url('../img/tenis.png');
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	position: relative;
-	*height: 1300px;
-	padding-bottom: 200px;
+	height: 1130px;
+	*padding-bottom: 200px;
+	*margin-top: -320px;
 }
 
 #plan h1{
@@ -579,9 +623,6 @@ h1 b {
 #steps {
 	float: left;
 	width: 100%;
-	margin-top: -165px;
-	margin-bottom: 80px;
-	margin-left: 20px;
 }
 
 #apply {
@@ -898,6 +939,112 @@ to{opacity: 1;}
 #personal_contact{
   padding-left: 0 !important;
 }
+#goodbye{
+	width: 100%;
+	float: left;
+	height: 1591px;
+}
+#zona_verde{
+	width: 100%;
+	float: left;
+	height: 1417px;
+}
+#chrome{
+	width: 100%;
+	float: left;
+	height: 3439px;
+}
+#chrome_{
+	width: 100%;
+	float: left;
+	padding: 0 19%;
+}
+#bonus{
+	margin-top: 33%;
+	text-align: right;
+	float: right;
+	width: 490px;
+}
+
+#goodbye,#zona_verde,#chrome{
+	position: relative;
+}
+.fondo_img{
+	width: 100%;
+	/*background-image: url('../img/basket_head.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 650px;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.supporters{
+	color: black;
+	position: absolute;
+  bottom: 0%;
+  width: 630px;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+#slider{
+	width: 100%;
+	float: left;
+	    margin-top: 200px;
+}
+
+.over{
+	font-size: 40px;
+	color: black;
+	    margin-top: 90px;
+}
+
+.over b{
+  font-family: "Gotham";
+  font-weight:100;
+}
+
+#owl-demo-v{
+	margin-top: 220px;
+}
+
+#plan_btn{
+	position: absolute;
+  bottom: 4%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+#plan_sect{
+  float: left;
+  width: 100%;
+  padding: 0 15%;
+  padding-top: 215px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.carrusel-margins{
+	padding: 0 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -950,28 +1097,174 @@ to{opacity: 1;}
   }
 }
 
-@media(min-width: 1400px){
-	#kobe .parallax img{
-	  transform: translate3d(-50%, 450px, 0px) !important;
-	}
-	#home .parallax img{
-	  transform: translate3d(-50%, 360px, 0px) !important;
-	}
-}
+@media(max-width: 1890px){
 
-@media(min-width: 1700px){
-	#kobe .parallax img{
-	  transform: translate3d(-50%, 570px, 0px) !important;
-	}
-}
+	#plan_sect {
+    padding: 215px 18% 0;
+  }
 
-@media(min-width: 1900px){
-	#kobe .parallax img{
-	  transform: translate3d(-50%, 700px, 0px) !important;
-	}
 }
 
 
+@media(max-width: 1820px){
+	#chrome_ {
+    padding: 0 14%;
+	}
+	#chromecast {
+    margin-top: 14%;
+	}
+	#plan_sect {
+    padding: 85px 15% 0;
+  }
+}
+
+@media(max-width: 1800px){
+	#bonus {
+    margin-top: 25%;
+  }
+}
+
+@media(max-width: 1750px){
+	#slider {
+    margin-top: 100px;
+	}
+	#plan_sect {
+    padding: 180px 15% 0;
+  }
+}
+
+@media(max-width: 1700px){
+	#bonus {
+    margin-top: 17%;
+  }
+	#title_gb {
+    margin-top: 11%;
+	}
+	#chromecast {
+    margin-top: 5%;
+	}
+}
+@media(max-width: 1620px){
+	.brs{
+		display: none;
+	}
+	#chrome_ {
+    padding: 0px 7%;
+	}
+	#chromecast {
+    margin-top:10%;
+	}
+}
+
+@media(max-width: 1590px){
+	#plan_sect {
+    padding: 180px 20% 0;
+  }
+}
+
+@media(max-width: 1500px){
+	.supporters {
+    bottom: -6%;
+  }
+  #chromecast {
+    width: 330px;
+    margin-top:12%;
+  }
+}
+
+@media(max-width: 1495px){
+	#plan_sect {
+    padding: 195px 17% 0;
+    margin-left: 35px;
+	}
+}
+
+@media(max-width: 1480px){
+	#plan_sect {
+    margin-left: 30px;
+  }
+}
+
+@media(max-width: 1475px){
+	#plan_sect {
+  	padding: 195px 25% 0;
+	}
+}
+
+@media(max-width: 1380px){
+	#slider h1 {
+    font-size: 48px;
+  }
+	#slider {
+    margin-top: -6px;
+	}
+	#owl-demo-v {
+    margin-top: 210px;
+	}
+	#fan_pass h1{
+		    margin-bottom: 50px !important;
+	}
+}
+
+@media(max-width: 1320px){
+	#slider h1 {
+    font-size: 45px;
+  }
+  .over {
+    margin-top: 50px;
+	}
+	#owl-demo-v {
+    margin-top: 200px;
+	}
+}
+
+@media(max-width: 1300px){
+	#slider {
+    margin-top: 140px;
+	}
+
+	#title_gb {
+    margin-top: 8%;
+	}
+	h1 {
+    font-size: 38px;
+  }
+  section p, #bonus p {
+    font-size: 10px;
+  }
+  #fan_pass h1{
+  	    margin-bottom: 40px !important;
+  }
+  #title_w {
+    margin-bottom: 25px;
+    margin-top: 40px;
+	}
+
+	#plan_btn{
+	  bottom: 2%;
+	}
+
+}
+
+
+@media(max-width: 1340px){
+	#slider h1 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 1230px){
+	.over {
+    font-size: 30px;
+    margin-top: 50px;
+	}
+}
+
+@media(max-width: 1210px){
+	#plan_sect {
+    padding: 130px 23% 0;
+	}
+}
 
 @media(max-width: 1200px){
   #club_details {
@@ -982,8 +1275,38 @@ to{opacity: 1;}
   }
 }
 
+
+@media(max-width: 1170px){
+	#slider {
+    margin-top: 60px;
+	}
+}
+
+
+
+@media(max-width: 1160px){
+	#slider {
+    margin-top: 60px;
+	}
+}
+
+
+@media(max-width: 1120px){
+	#slider {
+    margin-top: 0px;
+    margin-bottom: 0;
+	}
+	#slider h1 {
+    font-size: 30px;
+}
+}
+
+
 @media(max-width: 1100px){
   #footer {
+    padding: 0 100px;
+	}
+  #footer_mask {
     padding: 0 100px;
 	}
   #header {
@@ -992,24 +1315,38 @@ to{opacity: 1;}
 #confirmation h2 {
     margin-top: 100px;
 }
-	#chromecast {
-    position: absolute;
-    bottom: -140px;
-    left: 50px;
-    z-index: 99;
-    width: 380px;
-	}
+	
+  #chromecast {
+    width: 270px;
+    margin-top:12%;
+  }
 }
 
 #confirmation {
 	height: inherit;
   padding-bottom: 230px;
 }
-
-@media(max-width: 950px){
-	#bonus {
-    padding: 75px 80px;
+@media(max-width: 1000px){
+	.supporters {
+    bottom: -11%;
+  }
+  #chromecast {
+    width: 220px;
+  }
+  #slider {
+    margin-top: 50px;
+  }
+  #owl-demo-v {
+    margin-top: 160px;
 	}
+	#plan_sect {
+    padding: 95px 25% 0;
+    margin-left: 18px;
+	}
+}
+
+@media(max-width: 990px){
+
 	hr{
 		display: none;
 	}
@@ -1036,21 +1373,52 @@ to{opacity: 1;}
     margin: 0 auto;
 	}
 
+	.btn_clubs {
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+	}
+
 }
+
+@media(max-width: 950px){
+	#bonus {
+		    margin-top: 10%;
+	}
+}
+
+
 
 @media(max-width: 900px){
   #footer {
     padding: 0 50px;
 	}
+  #footer_mask {
+    padding: 0 50px;
+	}
   #header {
     padding: 0 50px;
 	}
+  #chromecast {
+  	margin-top: 0%;
+  }
+  #slider h1 {
+    font-size: 22px;
+	}
+	#owl-demo-v {
+    margin-top: 126px;
+	}
+
+	.over {
+    font-size: 20px;
+  }
+
 }
 
 @media(max-width: 850px){
-	#bonus {
-    height: 780px;
-	}
+  #chromecast {
+  	margin-top: 10%;
+  }
 	#apply {
     padding: 0 100px;
 	}
@@ -1060,7 +1428,36 @@ to{opacity: 1;}
   padding-bottom: 230px;
   }
 
+	#title_gb {
+    margin-top: 5%;
+	}
+	h1 {
+    font-size: 26px;
+  }
+  section p, #bonus p {
+    font-size: 8px;
+  }
+
+  #bonus {
+    width: 320px;
+    margin-top: 12%;
 }
+
+  #title_zv {
+    margin-bottom: 20px;
+    margin-top: 40px;
+	}
+	.good{
+		font-size: 10px !important;
+	}
+}
+
+@media(max-width: 830px){
+	#bonus {
+    width: 320px;
+	}
+}
+
 @media(max-width: 800px){
 	#header_movil {
 		display: block;
@@ -1076,12 +1473,89 @@ to{opacity: 1;}
 		padding-left:30px;
 		padding-right:30px;
 	}
+	#slider {
+    margin-top: 0px;
+	}
+}
+
+@media(max-width: 730px){
+	.brs2{
+		display: none;
+	}
+	#title_w {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+}
+
+
+@media(max-width: 700px){
+  #chromecast {
+  	margin-top: 16%;
+  	width: 150px;
+  }
+}
+
+@media(max-width: 690px){
+	#slider {
+    margin-top: 30px;
+	}
+	#owl-demo-v {
+    margin-top: 160px;
+	}
+	#title_s {
+    margin-bottom: 0px;
+  }
+  .over {
+    margin-top: 25px;
+	}
+	#plan_btn {
+    bottom: 1%;
+	}
+	.btn_clubs {
+    width: 140px;
+    height: 30px;
+    font-size: 12px;
+	}
 }
 
 @media(max-width: 650px){
 	#apply {
     padding: 0 50px;
 	}
+	#title_gb {
+    margin-bottom: 20px;
+  }
+	.supporters h1{
+		margin-bottom: 18px !important;
+  }
+
+  #fan_pass h1{
+  	    margin-bottom: 10px !important;
+  }
+  #slider h1 {
+    font-size: 16px;
+	}
+	#owl-demo-v {
+    margin-top: 90px;
+	}
+	.over {
+    font-size: 15px;
+	}
+}
+
+
+@media(max-width: 630px){
+  #chromecast {
+  	margin-top: 9%;
+  	width: 150px;
+  }
+}
+
+@media(max-width: 630px){
+	#title_b {
+    margin-bottom: 10px;
+  }
 }
 
 @media(max-width: 600px){
@@ -1097,19 +1571,6 @@ to{opacity: 1;}
   #confirmation h2 {
     font-size: 40px;
   }
-	h1{
-		font-size: 30px !important;
-	}
-
-
-	#goodbye {
-  padding: 120px 20px;
-	}
-
-	#goodbye > p{
-		font-size: 15px;
-	}
-
 	#kobe > h1 {
 		/*font-size: 30px;*/
 		padding-right: 10px;
@@ -1137,12 +1598,8 @@ to{opacity: 1;}
 		width: 100%;
 	}
 
-	#bonus {
-		padding: 75px 10px;
-	}
-
-	#bonus > p > b{
-		font-size: 14px !important;
+	#bonus p b {
+		font-size: 8px !important;
 	}
 
 	#clubsin h4 {
@@ -1169,8 +1626,31 @@ to{opacity: 1;}
 	#footer {
 		padding: 0 10px;
 	}
+	#footer_mask {
+		padding: 0 10px;
+	}
 }
 
+@media(max-width: 560px){
+	h1 {
+    font-size: 18px;
+	}
+	#chrome_ {
+    padding: 0 4%;
+}
+	.brs3{
+		display: none;
+	}
+}
+
+@media(max-width: 520px){
+  #chromecast {
+  	width: 110px;
+  }
+  #slider h1 {
+    font-size: 13px;
+	}
+}
 @media(max-width: 500px){
 	#apply > p {
     font-size: 16px;
@@ -1179,8 +1659,40 @@ to{opacity: 1;}
   #apply h2 {
     font-size: 40px;
   }
+  #bonus {
+    width: 200px;
+    margin-top: 5%;
+	}
 }
 
+@media(max-width: 480px){
+	section p, #bonus p {
+    font-size: 6px;
+	}
+  #chromecast {
+  	width: 110px;
+  }
+}
+
+
+@media(max-width: 460px){
+	#slider {
+    margin-top: 0px;
+	}
+}
+
+
+@media(max-width: 450px){
+	.supporters {
+    bottom: -16%;
+  }
+}
+
+@media(max-width: 415px){
+	.supporters h1 {
+    margin-bottom: 4px !important;
+  }
+}
 @media(max-width: 400px){
 	#rights {
 	  width: 100%;
@@ -1201,6 +1713,10 @@ to{opacity: 1;}
 	}
 
 	#footer {
+		height: inherit;
+	}
+
+	#footer_mask {
 		height: inherit;
 	}
 	#apply{

@@ -1,5 +1,12 @@
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#goodbye').css('height', $('#goodbye img').height());
+		$('#zona_verde').css('height', $('#zona_verde img').height());
+		$('#chrome').css('height', $('#chrome img').height());
+	});
+</script>
+
 <section id="home" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $this->webroot;?>img/home.png">
-	<!-- <div class="parallax"><img src=""></div> -->
 	<img id="logo_home" src="<?php echo $this->webroot; ?>img/logo_home.png">
 	<h1 class="animated">Forget the <br><b>sausage sizzle</b></h1>
 	<button class="animated btn_clubs black_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
@@ -8,91 +15,81 @@
 
 
 <section id="goodbye">
-	<img src="<?php echo $this->webroot;?>img/basket.png" style="width: 100%;">
+	<img class="fondo_img" src="<?php echo $this->webroot;?>img/basket.jpg">
 	<h1 id="title_gb" class="animated"><b>SAY GOOD-BYE</b><br>TO THE GALA</h1>
 	<p class="animated">With <b>Fan Pass</b> your school earns<br><b>10% on every subscription</b>your<br>parents and supporters buy.</p>
+
+	<div class="supporters">
+		<h1 class="animated" style="color: black;margin-bottom: 50px;">YOUR SUPPORTERS<br><b>GET SPORT FOR LESS</b></h1>
+		<p class="animated" style="color: black;">People who sign up <b>from your school</b> get a <b>10%<br> discount on their Fan Pass.</b><br><br>It all adds up to a great deal - for the <br>kids and the sports fans. </p>
+	</div>
 </section>
-<section id="supporters">
-	<img src="<?php echo $this->webroot;?>img/supporters.png">
+
+<section id="zona_verde">
+	<img class="fondo_img" src="<?php echo $this->webroot;?>img/zonaverde.jpg">
+	<h1 id="title_zv" class="animated"><b>GO LONG ON SPORT</b></h1>
+	<p class="animated"><br><b>Fan Pass</b> puts you in charge of the remote. All you can <br>handle sport. No contracts, no commitment. <b>For as <br>little as $14.99</b> you get all the games you want - and <br>none you don’t. </p>
+
+	<div id="fan_pass" class="supporters">
+		<h1 class="animated" style="margin-bottom: 100px;">WHAT’S <b>FAN PASS?</b></h1>
+		<p class="animated">You get SKY Sport channels 1, 2, 3, 4 through the <b>Fan <br>Pass</b> website or mobile app. Just buy a pass for a day, <br>a week or a month starting from only $14.99. <br><br>You get the freedom and flexibility to watch sport <br>when you want to, without contracts or long-term <br>commitment. It’s a player’s dream come true.</p>
+	</div>
 </section>
 
-
-
-<section id="kobe" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $this->webroot;?>img/kobeb.png">
-	<!-- <div class="parallax"><img src="<?php echo $this->webroot; ?>img/kobeb.png"></div> -->
-	<h1 class="animated">YOUR CLUB MEMBERS<br><b>GET SPORT FOR LESS</b></h1>
-	<p class="animated">Not only that, members get a <br><b>10% discount too.</b></p>
-
-	<div id="whats">
-		<div id="whats_contain">
-			<h1 class="animated">WHAT’S <b>FAN PASS?</b></h1>
-			<p class="animated"> SKY Sport channels 1, 2, 3, 4 through the Fan Pass website or mobile app. Just buy a pass for a day, a week or a month starting from only $14.99. <br><br>You get the freedom and flexibility to watch sport when you want to, without contracts or long-term commitment. It’s a player’s dream come true.</p>
+<section id="chrome">
+	<div id="chrome_">
+		<img class="fondo_img" src="<?php echo $this->webroot;?>img/abajo_.jpg">
+		<h1 id="title_w" class="animated" style="color: black;">WHAT’S IN IT <br><b>FOR YOUR SCHOOL?</b></h1>
+		<p class="animated" style="color: black;">Say no to ‘fun’ runs, stop more buying your own cake <br class="brs3">at the bake sale - with <b>FAN PASS</b> your school earns <br class="brs3">money every time parents or supporters buy a pass. <br class="brs3">And your members get <b>FAN PASS</b> for less. <br><b>It’s a WIN-WIN.</b><br class="brs"><br class="brs"><br class="brs"><br><br><br>
+		<b class="animated good" style="font-size:20px;font-weight:100;letter-spacing: 2px;">Fundraise just by watching sport. <br>Sound good?, right?</b></p><br class="brs2"><br class="brs"><br class="brs"><br class="brs"><br class="brs2">
+		<button class="animated btn_clubs blue_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
+		<img class="animated" id="chromecast" src="<?php echo $this->webroot; ?>img/chromecast.png">
+		<div id="bonus">
+			<h1 id="title_b" class="animated"><b>BONUS POINT</b></h1>
+			<p class="animated"><b>Your school gets a free Google Chromecast for every 100 passes sold to parents or supporters.</b> <br>Chromecast lets you easily stream digital content on your TV or big screen.<br><br><b style="font-size:20px;font-weight:100;">Now that’s something worth raffling.</b></p>
 		</div>
 	</div>
-</section>
-<section id="haka" class="parallax-container">
-	<h1 class="animated">WHAT’S IN IT <br><b>FOR YOUR CLUB?</b></h1>
-	<div>
-		<div>
-			<p class="animated">Forget the dodgy meat raffle to pay for the new team uniforms - with <b>FAN PASS</b> your club earns money every time your members buy a pass. And your members get <b>FAN PASS</b> for less. <br><b>It’s a WIN-WIN.</b><br><br><br>
-			<b class="animated" style="font-size:20px;font-weight:100;letter-spacing: 2px;">Fundraise just by watching sport. Sound good?</b></p><br><br><br>
-			<button class="animated btn_clubs blue_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
+
+	<div id="slider">
+		<h1 id="title_s" class="animated"><b>SCHOOLS</b><br>ALREADY FUNDRAISING WITH <b>FAN PASS</b></h1>
+		<div class="carrusel-margins">
+	    <div id="owl-demo-v" class="owl-carousel">
+	    	<?php foreach ($others as $key => $value){ ?>
+		      <div class="item">
+		        <img src="<?php echo $this->webroot;?>files/<?php echo $value['Logo']['logo'] ?>">
+		      </div>
+	    	<?php } ?>
+	    	<?php foreach ($logos as $key => $value){ ?>
+		      <div class="item" style="background-image:url('<?php echo $this->webroot;?>files/<?php echo $value['Application']['logo'] ?>');">
+		        <!-- <img src=""> -->
+		      </div>
+	    	<?php } ?>
+	    </div>
+	   </div>
+  
+  	<p class="animated over">Over <b>$5,000,000</b> given back to schools!</p>
+
+	</div>
+
+	<!-- <div id="plan_sect">
+		<img class="animated" id="steps" src="<?php echo $this->webroot; ?>img/steps.png">
+	</div> -->
+		<div id="plan_btn">
+			<button class="btn_clubs orange_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
 		</div>
-	</div>
-</section>
-<section id="bonus">
-	<h1 class="animated">BONUS POINT</h1>
-	<p class="animated"><b>Your club gets a free Google Chromecast for every <br>100 passes your club members purchase.</b> <br>Chromecast lets you easily stream digital content on <br>your TV or big screen. <br><br><b style="font-size:20px;font-weight:100;">Now that’s something worth raffling.</b></p>
-	<img class="animated" id="chromecast" src="<?php echo $this->webroot; ?>img/chromecast.png">
-</section>
-
-<section id="clubsin">
-	<h1 class="animated">CLUBS</h1>
-	<h4 class="animated">ALREADY ON THE PROGRAM</h4>
-
-	<div class="view-with-margin-v animated">
-    <div id="owl-demo-v" class="owl-carousel">
-    	<?php foreach ($others as $key => $value){ ?>
-	      <div class="item">
-	        <img src="<?php echo $this->webroot;?>files/<?php echo $value['Logo']['logo'] ?>">
-	      </div>
-    	<?php } ?>
-    	<?php foreach ($logos as $key => $value){ ?>
-	      <div class="item">
-	        <img src="<?php echo $this->webroot;?>files/<?php echo $value['Application']['logo'] ?>">
-	      </div>
-    	<?php } ?>
-    </div>
-  </div> 
-
-  <p class="animated">Over <b>$5,000,000</b> given back to clubs!</p>
-
-</section>
-
-<section id="plan">
-	<h1 class="animated">HERE’S THE<br><b>GAME PLAN</b></h1>
-	<img class="animated" id="steps" src="<?php echo $this->webroot; ?>img/steps.png">
-	<button class="animated btn_clubs black_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
-
-
-	<div id="footer">
-		<div id="rights"></div>
-		<ul style="margin-left: 10px;">
-			<li><a href="">ABOUT US</a></li>
-			<li><a href="">CONTACT US</a></li>
-			<li><a href="">FAQ</a></li>
-		</ul>
-		<div id="clubs_2"></div>
-	</div>
 </section>
 
 
 
 <script type="text/javascript">
 
-	$(document).resize(function(event) {
+	$(window).resize(function() {
 		if($(window).height()>870)
 			$('#home').css('height', $(window).height());
+
+			$('#goodbye').css('height', $('#goodbye img').height());
+			$('#zona_verde').css('height', $('#zona_verde img').height());
+			$('#chrome').css('height', $('#chrome img').height());
 	});
 
 	$(document).ready(function() {

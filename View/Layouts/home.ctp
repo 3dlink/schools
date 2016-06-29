@@ -41,21 +41,22 @@
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.7, user-scalable=no">
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<div onclick="$('body').scrollTo('#home',2500);" id="logo"></div>
+			<div onclick="$('body').scrollTo('#home',1500);" id="logo"></div>
 			<div id="clubs" class="menu_web"></div>
-			<div onclick="$('body').scrollTo('#plan',2500);" class="menu_item menu_web">HOW IT WORKS</div>
-			<div onclick="$('body').scrollTo('#haka',2500);" class="menu_item menu_web">APPLY</div>
-			<div onclick="$('body').scrollTo('#whats',3500);" class="menu_item menu_web">WHAT IS FAN PASS</div>
+			<div onclick="$('body').scrollTo('#plan_btn',1500,{offset:-750});" class="menu_item menu_web">HOW IT WORKS</div>
+			<div onclick="$('body').scrollTo('#chrome',1500);" class="menu_item menu_web">APPLY</div>
+			<div onclick="$('body').scrollTo('#fan_pass',1500,{offset:-150});" class="menu_item menu_web">WHAT IS FAN PASS</div>
 			<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_item menu_web">GO TO FAN PASS</div>
 			<div id="burger"></div>
 			<div id="menu_movil">
-				<div onclick="$('body').scrollTo('#plan',2500);" class="menu_movil">HOW IT WORKS</div>
-				<div onclick="$('body').scrollTo('#haka',2500);" class="menu_movil">APPLY</div>
-				<div onclick="$('body').scrollTo('#whats',3500);" class="menu_movil">WHAT IS FAN PASS</div>
+				<div onclick="$('body').scrollTo('#plan_btn',1500,{offset:-250});" class="menu_movil">HOW IT WORKS</div>
+				<div onclick="$('body').scrollTo('#chrome',1500);" class="menu_movil">APPLY</div>
+				<div onclick="$('body').scrollTo('#fan_pass',1500,{offset:-150});" class="menu_movil">WHAT IS FAN PASS</div>
 				<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_movil">GO TO FAN PASS</div>
 			</div>
 		</div>
@@ -64,6 +65,17 @@
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+		</div>
+		<div id="footer_2">
+			<div id="footer_mask">
+				<div id="rights"></div>
+				<ul style="margin-left: 10px;">
+					<li><a href="">ABOUT US</a></li>
+					<li><a href="">CONTACT US</a></li>
+					<li><a href="">FAQ</a></li>
+				</ul>
+				<div id="clubs_2"></div>
+			</div>
 		</div>
 
 		<script type="text/javascript">
