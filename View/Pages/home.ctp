@@ -43,6 +43,7 @@
 		<p class="animated" style="color: black;">Say no to ‘fun’ runs, stop more buying your own cake <br class="brs3">at the bake sale - with <b>FAN PASS</b> your school earns <br class="brs3">money every time parents or supporters buy a pass. <br class="brs3">And your members get <b>FAN PASS</b> for less. <br><b>It’s a WIN-WIN.</b><br class="brs"><br class="brs"><br class="brs"><br><br><br>
 		<b class="animated good" style="font-size:20px;font-weight:100;letter-spacing: 2px;">Fundraise just by watching sport. <br>Sound good?, right?</b></p><br class="brs2"><br class="brs"><br class="brs"><br class="brs"><br class="brs2">
 		<button class="animated btn_clubs blue_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
+		<div style="clear:both;"></div>
 		<img class="animated" id="chromecast" src="<?php echo $this->webroot; ?>img/chromecast.png">
 		<div id="bonus">
 			<h1 id="title_b" class="animated"><b>BONUS POINT</b></h1>
@@ -66,7 +67,7 @@
 	    	<?php } ?>
 	    </div>
 	   </div>
-  
+
   	<p class="animated over">Over <b>$5,000,000</b> given back to schools!</p>
 
 	</div>
@@ -82,6 +83,10 @@
 
 
 <script type="text/javascript">
+
+	$(window).load(function(){
+
+	})
 
 	$(window).resize(function() {
 		if($(window).height()>870)

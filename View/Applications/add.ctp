@@ -1,3 +1,23 @@
+<style>
+
+input::-webkit-input-placeholder {
+color: white !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: white !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;
+}
+
+input:-ms-input-placeholder {
+color: white !important;
+}
+</style>
+
+
 <section id="apply">
 	<h2 class="animated">AWESOME!</h2>
 	<p class="animated">Looks like you’re keen <b>to fundraise the fun way.</b><br><br><b>We just need a few details to kick off your fundraising</b><br>then you should be good to go within 10 days.</p>

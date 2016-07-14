@@ -44,6 +44,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.7, user-scalable=no">
 </head>
 <body>
+	<div class="loader"></div>
 	<div id="container">
 		<div id="header">
 			<div onclick="$('body').scrollTo('#home',1500);" id="logo"></div>
@@ -54,10 +55,10 @@
 			<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_item menu_web">GO TO FAN PASS</div>
 			<div id="burger"></div>
 			<div id="menu_movil">
-				<div onclick="$('body').scrollTo('#plan_btn',1500,{offset:-250});" class="menu_movil">HOW IT WORKS</div>
-				<div onclick="$('body').scrollTo('#chrome',1500);" class="menu_movil">APPLY</div>
-				<div onclick="$('body').scrollTo('#fan_pass',1500,{offset:-150});" class="menu_movil">WHAT IS FAN PASS</div>
 				<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_movil">GO TO FAN PASS</div>
+				<div onclick="$('body').scrollTo('#fan_pass',1500,{offset:-150});" class="menu_movil">WHAT IS FAN PASS</div>
+				<div onclick="$('body').scrollTo('#chrome',1500);" class="menu_movil">APPLY</div>
+				<div onclick="$('body').scrollTo('#plan_btn',1500,{offset:-250});" class="menu_movil">HOW IT WORKS</div>
 			</div>
 		</div>
 		<div id="content">
@@ -79,6 +80,10 @@
 		</div>
 
 		<script type="text/javascript">
+		$( window ).load(function() {
+          $(".loader").css("display", 'none');
+      });
+
 			$('#burger').click(function(event) {
 				if($('#menu_movil').hasClass('in')){
 					$('#menu_movil').css('display', 'none');
