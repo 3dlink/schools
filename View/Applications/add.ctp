@@ -29,48 +29,48 @@ color: white !important;
 			<div class="input_content animated">
 				<label>Contact name</label>
 				<div class="col-md-6 input_left">
-					<?php echo $this->Form->input('name',array('class'=>'input_clubs','placeholder'=>'First','id'=>'first_name','label'=>false)); ?>
+					<?php echo $this->Form->input('name',array('class'=>'input_clubs','placeholder'=>'First','id'=>'first_name','label'=>false,'required'=>true)); ?>
 				</div>
 				<div class="col-md-6 input_right">
-					<?php echo $this->Form->input('last',array('class'=>'input_clubs','placeholder'=>'Last','id'=>'last_name','label'=>false)); ?>
+					<?php echo $this->Form->input('last',array('class'=>'input_clubs','placeholder'=>'Last','id'=>'last_name','label'=>false,'required'=>true)); ?>
 				</div>
 			</div>
 
 			<div class="input_content animated">
 				<label>Email address</label>
-					<?php echo $this->Form->input('email',array('class'=>'input_clubs','placeholder'=>'','id'=>'email','label'=>false)); ?>
+					<?php echo $this->Form->input('email',array('class'=>'input_clubs','placeholder'=>'','id'=>'email','label'=>false,'required'=>true)); ?>
 			</div>
 
 			<div class="input_content animated">
 				<label>Phone number</label>
-					<?php echo $this->Form->input('phone',array('class'=>'input_clubs','placeholder'=>'','id'=>'phone','label'=>false)); ?>
+					<?php echo $this->Form->input('phone',array('class'=>'input_clubs','placeholder'=>'','id'=>'phone','label'=>false,'required'=>true)); ?>
 			</div>
 
 			<div class="input_content animated">
 				<label>Your position in the school</label>
-					<?php echo $this->Form->input('position',array('class'=>'input_clubs','placeholder'=>'','id'=>'position','label'=>false)); ?>
+					<?php echo $this->Form->input('position',array('class'=>'input_clubs','placeholder'=>'','id'=>'position','label'=>false,'required'=>true)); ?>
 			</div>
 
 			<div class="input_content animated">
 				<label>Treasurer name</label>
 				<div class="col-md-6 input_left">
-					<?php echo $this->Form->input('treasurer_name',array('class'=>'input_clubs','placeholder'=>'First','id'=>'first_treasure','label'=>false)); ?>
+					<?php echo $this->Form->input('treasurer_name',array('class'=>'input_clubs','placeholder'=>'First','id'=>'first_treasure','label'=>false,'required'=>true)); ?>
 				</div>
 				<div class="col-md-6 input_right">
-					<?php echo $this->Form->input('treasurer_last',array('class'=>'input_clubs','placeholder'=>'Last','id'=>'last_treasure','label'=>false)); ?>
+					<?php echo $this->Form->input('treasurer_last',array('class'=>'input_clubs','placeholder'=>'Last','id'=>'last_treasure','label'=>false,'required'=>true)); ?>
 				</div>
 				<div id="copy_name" class="copy">Copy my name</div>
 			</div>
 
 			<div class="input_content animated">
 				<label>Treasurer email</label>
-					<?php echo $this->Form->input('treasurer_email',array('class'=>'input_clubs','placeholder'=>'','id'=>'treasurer_email','label'=>false)); ?>
+					<?php echo $this->Form->input('treasurer_email',array('class'=>'input_clubs','placeholder'=>'','id'=>'treasurer_email','label'=>false,'required'=>true)); ?>
 				<div id="copy_email" class="copy">Copy my email</div>
 			</div>
 
 			<div class="input_content animated">
 				<label>Treasurer phone</label>
-					<?php echo $this->Form->input('treasurer_phone',array('class'=>'input_clubs','placeholder'=>'','id'=>'treasurer_phone','label'=>false)); ?>
+					<?php echo $this->Form->input('treasurer_phone',array('class'=>'input_clubs','placeholder'=>'','id'=>'treasurer_phone','label'=>false,'required'=>true)); ?>
 				<div id="copy_phone" class="copy">Copy my phone</div>
 			</div>
 		<hr>
@@ -80,7 +80,7 @@ color: white !important;
 
 			<div class="input_content animated">
 				<label>Name of your school</label>
-					<?php echo $this->Form->input('school_name',array('class'=>'input_clubs','placeholder'=>'','id'=>'club_name','label'=>false)); ?>
+					<?php echo $this->Form->input('school_name',array('class'=>'input_clubs','placeholder'=>'','id'=>'club_name','label'=>false,'required'=>true)); ?>
 			</div>
 
 			<div class="input_content animated">
@@ -90,7 +90,7 @@ color: white !important;
 
 			<div class="input_content animated">
 				<label>Website</label>
-					<?php echo $this->Form->input('website',array('class'=>'input_clubs','placeholder'=>'URL','id'=>'website','label'=>false)); ?>
+					<?php echo $this->Form->input('website',array('class'=>'input_clubs','placeholder'=>'URL','id'=>'website','label'=>false,'required'=>true)); ?>
 			</div>
 
 			<div class="input_content animated">

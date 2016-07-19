@@ -20,4 +20,12 @@ class Application extends AppModel {
  */
 	public $displayField = 'name';
 
+	public $validate = array(
+		'size' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty')
+			),
+		)
+	);
+
 }
