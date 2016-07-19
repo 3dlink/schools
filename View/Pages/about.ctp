@@ -1,4 +1,4 @@
-<section id="index" class="two">
-<p class="title">ABOUT US</p>
-<p><?php echo nl2br($texts['Text']['about']); ?></p>
+<section id="index" class="two" style="color:black; margin-top:100px;">
+  <p style="color:black;" class="title">ABOUT US</p>
+  <p style="color:black;"><?php echo nl2br($texts['Content']['Content']); ?></p>
 </section>

@@ -72,6 +72,7 @@
               <ul class="dropdown-menu">
                 <li><a href="<?php echo $this->webroot.'logos'; ?>">Logos</a></li>
                 <li><a href="<?php echo $this->webroot.'applications'; ?>">Applications</a></li>
+                <li><a href="<?php echo $this->webroot.'contents'; ?>">Contents</a></li>
               </ul>
             </li>
           </ul>

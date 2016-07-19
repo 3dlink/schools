@@ -131,6 +131,12 @@
   font-style: italic;
 }
 
+.two p{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
 body {
 	width:100%;
 	margin: 0 auto;
@@ -274,6 +280,8 @@ li a:hover{
 	cursor: pointer;
 	float: right;
 	padding: 17px 25px;
+  width: 150px;
+  text-align: center;
 }
 
 .menu_item:hover{
@@ -381,6 +389,10 @@ h1{
   *background-size: cover;
   *height: 1300px;
   position: relative;
+}
+
+.title{
+	font-size: 26px;
 }
 
 #supporters{
@@ -891,7 +903,7 @@ to{opacity: 1;}
 
 .btn-pekeupload:after, a:focus, a:hover{
     text-decoration: none !important;
-    color: black !important;
+    color: #18bcb8  !important;
 }
 
 #upload_btn{
@@ -1277,6 +1289,9 @@ to{opacity: 1;}
 }
 
 @media(max-width: 1200px){
+  .menu_item {
+    width: 120px;
+  }
   #club_details {
     padding-left: 60px;
 	}

@@ -35,7 +35,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Application','Logo');
+	public $uses = array('Application','Logo','Content');
 
 /**
  * Displays a view
@@ -77,6 +77,18 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+	}
+
+	public function about(){
+		$this->set('texts',$this->Content->find('first', array('conditions'=>array('id' =>1))));
+	}
+
+	public function contact(){
+		$this->set('texts',$this->Content->find('first', array('conditions'=>array('id' =>2))));
+	}
+
+	public function faq(){
+		$this->set('texts',$this->Content->find('first', array('conditions'=>array('id' =>3))));
 	}
 
 	public function apply(){

@@ -212,6 +212,10 @@ body {
 	padding: 0 200px;
 }
 
+.title{
+	font-size: 26px;
+}
+
 #rights{
 	height: 125px;
 	width: 245px;
@@ -231,6 +235,7 @@ body {
    z-index: 10000;
    background: url('../img/loading.gif') 50% 50% no-repeat black ;
 }
+
 
 ul{
 	float: right;
@@ -281,6 +286,8 @@ li a:hover{
 	cursor: pointer;
 	float: right;
 	padding: 17px 25px;
+  width: 150px;
+  text-align: center;
 }
 
 .menu_item:hover{
@@ -713,6 +720,12 @@ h3{
 	margin-top: 70px;
 }
 
+.two p{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
 .input_content{
 	float: left;
 	width: 100%;
@@ -898,7 +911,7 @@ to{opacity: 1;}
 
 .btn-pekeupload:after, a:focus, a:hover{
     text-decoration: none !important;
-    color: black !important;
+    color: #18bcb8  !important;
 }
 
 #upload_btn{
@@ -1285,6 +1298,9 @@ to{opacity: 1;}
 }
 
 @media(max-width: 1200px){
+  .menu_item {
+    width: 120px;
+  }
   #club_details {
     padding-left: 60px;
 	}

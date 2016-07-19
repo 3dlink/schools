@@ -32,6 +32,9 @@
 	Router::connect('/apply', array('controller' => 'applications', 'action' => 'add'));
 	Router::connect('/confirmation/*', array('controller' => 'pages', 'action' => 'confirmation'));
 
+	Router::connect('/about', array('controller' => 'pages', 'action' => 'about'));
+	Router::connect('/faq', array('controller' => 'pages', 'action' => 'faq'));
+
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

@@ -71,9 +71,9 @@
 			<div id="footer_mask">
 				<div id="rights"></div>
 				<ul style="margin-left: 10px;">
-					<li><a href="">ABOUT US</a></li>
-					<li><a href="">CONTACT US</a></li>
-					<li><a href="">FAQ</a></li>
+					<li><a href="<?php echo $this->webroot; ?>about">ABOUT US</a></li>
+					<li><a href="<?php echo $this->webroot; ?>contact">CONTACT US</a></li>
+					<li><a href="<?php echo $this->webroot; ?>faq">FAQ</a></li>
 				</ul>
 				<div id="clubs_2"></div>
 			</div>
