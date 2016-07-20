@@ -15,6 +15,10 @@ color: white !important;
 input:-ms-input-placeholder {
 color: white !important;
 }
+
+body{
+	background-image: none;
+}
 </style>
 
 
@@ -121,9 +125,9 @@ color: white !important;
 	<div id="footer">
 		<div id="rights"></div>
 		<ul>
-			<li><a href="">ABOUT US</a></li>
-			<li><a href="">CONTACT US</a></li>
-			<li><a href="">FAQ</a></li>
+			<li><a href="<?php echo $this->webroot; ?>about">ABOUT US</a></li>
+			<li><a href="<?php echo $this->webroot; ?>contact">CONTACT US</a></li>
+			<li><a href="<?php echo $this->webroot; ?>faq">FAQ</a></li>
 		</ul>
 		<div id="clubs_2"></div>
 	</div>

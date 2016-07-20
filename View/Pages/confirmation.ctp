@@ -1,3 +1,9 @@
+<style type="text/css">
+body{
+	background-image: none;
+}
+</style>
+
 <section id="confirmation">
 	<h2 class="animated">You’re set to fundraise<br>with your feet up</h2>
 	<p class="animated"><b>Cheers <?php echo $application['Application']['name']; ?>,</b> now your school can start fundraising just by watching sport. We should have you up and running <b>within 10 days.</b>
@@ -17,9 +23,9 @@
 	<div id="footer">
 		<div id="rights"></div>
 		<ul>
-			<li><a href="">ABOUT US</a></li>
-			<li><a href="">CONTACT US</a></li>
-			<li><a href="">FAQ</a></li>
+			<li><a href="<?php echo $this->webroot; ?>about">ABOUT US</a></li>
+			<li><a href="<?php echo $this->webroot; ?>contact">CONTACT US</a></li>
+			<li><a href="<?php echo $this->webroot; ?>faq">FAQ</a></li>
 		</ul>
 		<div id="clubs_2"></div>
 	</div>

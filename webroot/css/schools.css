@@ -285,7 +285,7 @@ li a:hover{
 	display: inline-block;
 	cursor: pointer;
 	float: right;
-	padding: 17px 25px;
+	padding: 17px 0px;
   width: 150px;
   text-align: center;
 }
@@ -369,12 +369,27 @@ h1{
 	background: rgba(0,0,0,0.5);
 }
 
+.black_trans:hover{
+	color: #194839;
+	background: white;
+}
+
 .orange_trans, .orange_trans:focus{
 	background: rgba(240,90,41,0.5);
 }
 
+.orange_trans:hover{
+	color: rgb(240,90,41);
+	background: white;
+}
+
 .blue_trans, .blue_trans:focus{
-	background: rgba(0,225,225,0.7);
+	background: rgba(0,225,225,0.5);
+}
+
+.blue_trans:hover{
+	color: rgb(0,225,225);
+	background: white;
 }
 
 #home p {
@@ -1029,7 +1044,7 @@ to{opacity: 1;}
 .over{
 	font-size: 40px;
 	color: black;
-	    margin-top: 90px;
+	    margin-top: 50px;
 }
 
 .over b{

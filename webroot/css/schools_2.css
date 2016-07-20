@@ -131,12 +131,21 @@
   font-style: italic;
 }
 
-.two p{
+.two .text_content{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
 }
 
+  #index{
+	width:100%;
+  	max-width: 950px;
+  	margin: 0 auto;
+  }
+
+  .text_content{
+  	text-align: justify !important;
+  }
 body {
 	width:100%;
 	margin: 0 auto;
@@ -279,7 +288,7 @@ li a:hover{
 	display: inline-block;
 	cursor: pointer;
 	float: right;
-	padding: 17px 25px;
+	padding: 17px 0px;
   width: 150px;
   text-align: center;
 }
@@ -369,6 +378,20 @@ h1{
 
 .blue_trans, .blue_trans:focus{
 	background: rgba(0,225,225,0.7);
+}
+
+.orange_trans:hover{
+	color: rgb(240,90,41);
+	background: white;
+}
+
+.black_trans:hover{
+	color: #194839;
+	background: white;
+}
+.btn-pekeupload:hover {
+    background: black;
+    color: white !important;
 }
 
 #home p {
@@ -1411,6 +1434,9 @@ to{opacity: 1;}
 	#bonus {
 		    margin-top: 10%;
 	}
+  #index{	
+	padding: 0 20px;
+}
 }
 
 

@@ -113,7 +113,7 @@ label{
       		<div class="col-md-4">
       			<div class="form-group">
 							<label>Logo</label>
-              <img src="<?php echo $this->webroot; ?>files/<?php echo $application['Application']['logo']; ?>">
+              <img style="width:100%;" src="<?php echo $this->webroot; ?>files/<?php echo $application['Application']['logo']; ?>">
 						</div>
       		</div>
       		<div style="clear:both;"></div>

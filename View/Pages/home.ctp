@@ -50,7 +50,6 @@
 			<p class="animated"><b>Your school gets a free Google Chromecast for every 100 passes sold to parents or supporters.</b> <br>Chromecast lets you easily stream digital content on your TV or big screen.<br><br><b style="font-size:20px;font-weight:100;">Now that’s something worth raffling.</b></p>
 		</div>
 	</div>
-
 	<div id="slider">
 		<h1 id="title_s" class="animated"><b>SCHOOLS</b><br>ALREADY FUNDRAISING WITH <b>FAN PASS</b></h1>
 		<div class="carrusel-margins">
@@ -60,17 +59,18 @@
 		        <img src="<?php echo $this->webroot;?>files/<?php echo $value['Logo']['logo'] ?>">
 		      </div>
 	    	<?php } ?>
-	    	<?php foreach ($logos as $key => $value){ ?>
-		      <div class="item" style="background-image:url('<?php echo $this->webroot;?>files/<?php echo $value['Application']['logo'] ?>');">
-		        <!-- <img src=""> -->
+	    	<?php foreach ($logos as $key => $value){?>
+		      <div class="item">
+		        <img src="<?php echo $this->webroot;?>files/<?php echo $value['Application']['logo'] ?>">
+		      </div>
 		      </div>
 	    	<?php } ?>
 	    </div>
+  	<p class="animated over">Over <b>$5,000,000</b> given back to schools!</p>
 	   </div>
 
-  	<p class="animated over">Over <b>$5,000,000</b> given back to schools!</p>
 
-	</div>
+	<!-- </div> -->
 
 	<!-- <div id="plan_sect">
 		<img class="animated" id="steps" src="<?php echo $this->webroot; ?>img/steps.png">
