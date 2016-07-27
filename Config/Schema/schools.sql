@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2016-07-20 10:09:18
+Date: 2016-07-27 16:15:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -43,7 +43,6 @@ CREATE TABLE `application` (
 -- ----------------------------
 -- Records of application
 -- ----------------------------
-INSERT INTO `application` VALUES ('5', 'Diego', 'Brito', 'dbrito_9_9@hotmail.com', '4242011692', 'manager', 'Diego', 'Brito', 'dbrito_9_9@hotmail.com', '4242011692', '3D Link', '501 - 1,000', 'www.3dlinkweb.com', 'asdasd', 'img146902200425G.jpg', '1', '1');
 
 -- ----------------------------
 -- Table structure for contents

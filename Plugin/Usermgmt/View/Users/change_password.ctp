@@ -1,3 +1,8 @@
+<style type="text/css">
+	#profile label{
+		color: black !important;
+	}
+</style>
 <section id="profile">
 	<div id="profile_content" class="change_pass">
 					<?php echo $this->Form->create('User', array('action' => 'changePassword')); ?>
