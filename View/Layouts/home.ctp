@@ -49,10 +49,10 @@
 		<div id="header">
 			<div onclick="$('body').scrollTo('#home',1500);" id="logo"></div>
 			<div id="clubs" class="menu_web"></div>
-			<div onclick="$('body').scrollTo('#plan_btn',1500,{offset:-750});" class="menu_item menu_web">HOW IT WORKS</div>
-			<div onclick="$('body').scrollTo('#chrome',1500);" class="menu_item menu_web">APPLY</div>
-			<div onclick="$('body').scrollTo('#fan_pass',1500,{offset:-150});" class="menu_item menu_web">WHAT IS FAN PASS</div>
-			<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_item menu_web">GO TO FAN PASS</div>
+			<div onclick="$('body').scrollTo('#plan_btn',1500,{offset:-750});" class="menu_item menu_web hw_men">HOW IT WORKS</div>
+			<div onclick="$('body').scrollTo('#chrome',1500);" class="menu_item menu_web ap_men">APPLY</div>
+			<div onclick="$('body').scrollTo('#fan_pass',1500,{offset:-150});" class="menu_item menu_web wh_men">WHAT IS FAN PASS</div>
+			<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_item menu_web fp_men">GO TO FAN PASS</div>
 			<div id="burger"></div>
 			<div id="menu_movil">
 				<div onclick="window.open('http://www.fanpass.co.nz/','_blank')" class="menu_movil">GO TO FAN PASS</div>

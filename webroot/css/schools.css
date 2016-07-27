@@ -242,6 +242,7 @@ ul{
 	list-style-type: none;
 	padding-top: 37px;
 	padding-left: 20px;
+	    width: 100px;
 }
 
 #home {
@@ -281,13 +282,27 @@ li a:hover{
 }
 
 .menu_item{
-	height: 50px;
-	display: inline-block;
-	cursor: pointer;
-	float: right;
-	padding: 17px 0px;
-  width: 150px;
+  height: 50px;
+  /*width: 150px;*/
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 17px 0px;
   text-align: center;
+  margin: 0 15px;
+}
+
+.hw_men{
+	width: 100px;
+}
+.ap_men{
+	width: 40px;
+}
+.wh_men{
+	width: 120px
+}
+.fp_men{
+	width: 106px;
 }
 
 .menu_item:hover{
@@ -361,7 +376,7 @@ h1{
 	display: -moz-inline-stack;
 	font-size: 23px;
   letter-spacing: 3px;
-  padding-top: 5.5px;
+  padding-top: 5px;
   padding-left: 10px;
 }
 
@@ -625,7 +640,7 @@ h1 b {
 }
 
 #bonus b {
-	font-weight:100;
+	font-weight:700;
 }
 
 #chromecast {
@@ -676,7 +691,7 @@ h1 b {
 }
 
 #apply b{
-  font-weight: 100;
+  font-weight: 700;
 }
 
 h2{
@@ -735,7 +750,7 @@ h3{
 	margin-top: 70px;
 }
 
-.two p{
+.two .text_content{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
@@ -1044,7 +1059,7 @@ to{opacity: 1;}
 .over{
 	font-size: 40px;
 	color: black;
-	    margin-top: 50px;
+	    margin-top: 25px;
 }
 
 .over b{
@@ -1061,6 +1076,12 @@ to{opacity: 1;}
   bottom: 4%;
 	left:50%;
 	transform:translate(-50%,-50%);
+}
+
+.item{
+	height: 145px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #plan_sect{
@@ -1239,7 +1260,8 @@ to{opacity: 1;}
 
 @media(max-width: 1380px){
 	#slider h1 {
-    font-size: 48px;
+    font-size: 35px;
+    margin-top: 55px;
   }
 	#slider {
     margin-top: -6px;
@@ -1302,7 +1324,7 @@ to{opacity: 1;}
 @media(max-width: 1230px){
 	.over {
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
 	}
 }
 
@@ -1314,8 +1336,14 @@ to{opacity: 1;}
 
 @media(max-width: 1200px){
   .menu_item {
-    width: 120px;
+    *width: 120px;
   }
+  #header {
+    padding: 0 100px;
+  }
+  #footer {
+    padding: 0 100px;
+	}
   #club_details {
     padding-left: 60px;
 	}
@@ -1430,27 +1458,7 @@ to{opacity: 1;}
 
 }
 
-@media(max-width: 950px){
-	#bonus {
-		    margin-top: 10%;
-	}
-}
-
-
-
-@media(max-width: 900px){
-  #footer {
-    padding: 0 50px;
-	}
-  #footer_mask {
-    padding: 0 50px;
-	}
-  #header {
-    padding: 0 50px;
-	}
-  #chromecast {
-  	margin-top: 0%;
-  }
+@media(max-width: 960px){
   #slider h1 {
     font-size: 22px;
 	}
@@ -1461,7 +1469,48 @@ to{opacity: 1;}
 	.over {
     font-size: 20px;
   }
+}
 
+
+@media(max-width: 950px){
+	#bonus {
+		    margin-top: 10%;
+	}
+	.menu_item {
+    width: 130px;
+  }
+  .hw_men{
+  	width: 110px;
+    margin-right: 10px;
+  }
+  .ap_men{
+    width: 60px;
+  }
+  #footer {
+    padding: 0 50px;
+	}
+  #footer_mask {
+    padding: 0 50px;
+	}
+  #header {
+    padding: 0 50px;
+	}
+}
+
+
+
+@media(max-width: 900px){
+  #chromecast {
+  	margin-top: 0%;
+  }
+
+}
+
+
+@media(max-width: 860px){
+	.over {
+    margin-top: -20px;
+	}
 }
 
 @media(max-width: 850px){
@@ -1527,6 +1576,13 @@ to{opacity: 1;}
 	}
 }
 
+
+@media(max-width: 765px){
+	#slider {
+    margin-top: -35px;
+}
+}
+
 @media(max-width: 730px){
 	.brs2{
 		display: none;
@@ -1534,6 +1590,9 @@ to{opacity: 1;}
 	#title_w {
     margin-bottom: 10px;
     margin-top: 15px;
+}
+	#slider {
+    margin-top: 0px;
 }
 }
 
@@ -1543,6 +1602,18 @@ to{opacity: 1;}
   	margin-top: 16%;
   	width: 150px;
   }
+	#slider {
+    margin-top: 60px;
+}
+#title_s {
+    margin-bottom: 10px;
+    }
+    .carrusel-margins {
+        margin-top: -30px;
+}
+.over {
+    margin-top: -40px;
+}
 }
 
 @media(max-width: 690px){
@@ -1566,7 +1637,11 @@ to{opacity: 1;}
     height: 30px;
     font-size: 12px;
 	}
+.item {
+    height: 85px;
+  }
 }
+
 
 @media(max-width: 650px){
 	#apply {
@@ -1585,9 +1660,13 @@ to{opacity: 1;}
   #slider h1 {
     font-size: 16px;
 	}
-	#owl-demo-v {
+	/*#owl-demo-v {
     margin-top: 90px;
-	}
+	}*/
+
+	#owl-demo-v {
+    margin-top: 115px;
+}
 	.over {
     font-size: 15px;
 	}
@@ -1680,6 +1759,15 @@ to{opacity: 1;}
 	}
 }
 
+@media(max-width: 580px){
+	#owl-demo-v {
+    margin-top: 100px;
+	}
+	.over {
+    margin-top: 0px;
+}
+}
+
 @media(max-width: 560px){
 	h1 {
     font-size: 18px;
@@ -1712,6 +1800,15 @@ to{opacity: 1;}
     width: 200px;
     margin-top: 5%;
 	}
+}
+
+@media(max-width: 490px){
+.item {
+    height: 50px;
+}
+.over {
+    font-size: 12px;
+}
 }
 
 @media(max-width: 480px){

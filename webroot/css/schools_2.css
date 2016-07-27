@@ -135,6 +135,9 @@
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
 }
 
   #index{
@@ -248,6 +251,7 @@ ul{
 	list-style-type: none;
 	padding-top: 37px;
 	padding-left: 20px;
+	    width: 100px;
 }
 
 #home {
@@ -283,14 +287,29 @@ li a:hover{
 	background-repeat: no-repeat;
 }
 
+
 .menu_item{
-	height: 50px;
-	display: inline-block;
-	cursor: pointer;
-	float: right;
-	padding: 17px 0px;
-  width: 150px;
+  height: 50px;
+  /*width: 150px;*/
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  padding: 17px 0px;
   text-align: center;
+  margin: 0 15px;
+}
+
+.hw_men{
+	width: 100px;
+}
+.ap_men{
+	width: 40px;
+}
+.wh_men{
+	width: 120px
+}
+.fp_men{
+	width: 106px;
 }
 
 .menu_item:hover{
@@ -682,7 +701,7 @@ h1 b {
 }
 
 #apply b{
-  font-weight: 100;
+  font-weight: 700;
 }
 
 h2{
@@ -857,6 +876,7 @@ form .btn_clubs{
 
 #confirmation{
 	float: left;
+  display: table;
 	width: 100%;
 	background-image: url('../img/fondo_confirmation.png');
 	background-size: cover;
@@ -1313,8 +1333,14 @@ to{opacity: 1;}
 
 @media(max-width: 1200px){
   .menu_item {
-    width: 120px;
+    *width: 120px;
   }
+  #header {
+    padding: 0 100px;
+  }
+  #footer {
+    padding: 0 100px;
+	}
   #club_details {
     padding-left: 60px;
 	}
@@ -1437,11 +1463,16 @@ to{opacity: 1;}
   #index{	
 	padding: 0 20px;
 }
-}
-
-
-
-@media(max-width: 900px){
+	.menu_item {
+    width: 130px;
+  }
+  .hw_men{
+  	width: 110px;
+    margin-right: 10px;
+  }
+  .ap_men{
+    width: 60px;
+  }
   #footer {
     padding: 0 50px;
 	}
@@ -1451,6 +1482,11 @@ to{opacity: 1;}
   #header {
     padding: 0 50px;
 	}
+}
+
+
+
+@media(max-width: 900px){
   #chromecast {
   	margin-top: 0%;
   }

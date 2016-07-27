@@ -33,4 +33,16 @@ body{
 
 <script type="text/javascript">
 	$("#file2").pekeUpload({showPercent: false,allowedExtensions:"jpeg|jpg|png|gif", multi:false, url:"<?php echo $this->webroot?>start/upload/<?php echo $id; ?>"});
+
+
+	$(window).resize(function() {
+		if($(window).height()>870)
+			$('#confirmation').css('height', $(window).height());
+	});
+
+	$(document).ready(function() {
+		if($(window).height()>870)
+			$('#confirmation').css('height', $(window).height());
+	});
+
 </script>

@@ -41,13 +41,13 @@
 		<img class="fondo_img" src="<?php echo $this->webroot;?>img/abajo_.jpg">
 		<h1 id="title_w" class="animated" style="color: black;">WHAT’S IN IT <br><b>FOR YOUR SCHOOL?</b></h1>
 		<p class="animated" style="color: black;">Say no to ‘fun’ runs, stop more buying your own cake <br class="brs3">at the bake sale - with <b>FAN PASS</b> your school earns <br class="brs3">money every time parents or supporters buy a pass. <br class="brs3">And your members get <b>FAN PASS</b> for less. <br><b>It’s a WIN-WIN.</b><br class="brs"><br class="brs"><br class="brs"><br><br><br>
-		<b class="animated good" style="font-size:20px;font-weight:100;letter-spacing: 2px;">Fundraise just by watching sport. <br>Sound good?, right?</b></p><br class="brs2"><br class="brs"><br class="brs"><br class="brs"><br class="brs2">
+		<b class="animated good" style="font-size:20px;font-weight:600;letter-spacing: 2px;">Fundraise just by watching sport. <br>Sound good?, right?</b></p><br class="brs2"><br class="brs"><br class="brs"><br class="brs"><br class="brs2">
 		<button class="animated btn_clubs blue_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
 		<div style="clear:both;"></div>
 		<img class="animated" id="chromecast" src="<?php echo $this->webroot; ?>img/chromecast.png">
 		<div id="bonus">
 			<h1 id="title_b" class="animated"><b>BONUS POINT</b></h1>
-			<p class="animated"><b>Your school gets a free Google Chromecast for every 100 passes sold to parents or supporters.</b> <br>Chromecast lets you easily stream digital content on your TV or big screen.<br><br><b style="font-size:20px;font-weight:100;">Now that’s something worth raffling.</b></p>
+			<p class="animated"><b>Your school gets a free Google Chromecast for every 100 passes sold to parents or supporters.</b> <br>Chromecast lets you easily stream digital content on your TV or big screen.<br><br><b style="font-size:20px;font-weight:700;">Now that’s something worth raffling.</b></p>
 		</div>
 	</div>
 	<div id="slider">
@@ -55,26 +55,18 @@
 		<div class="carrusel-margins">
 	    <div id="owl-demo-v" class="owl-carousel">
 	    	<?php foreach ($others as $key => $value){ ?>
-		      <div class="item">
-		        <img src="<?php echo $this->webroot;?>files/<?php echo $value['Logo']['logo'] ?>">
+		      <div class="item" style="background-image:url('<?php echo $this->webroot;?>files/<?php echo $value['Logo']['logo'] ?>');">
+		        <!-- <img src=""> -->
 		      </div>
 	    	<?php } ?>
 	    	<?php foreach ($logos as $key => $value){?>
-		      <div class="item">
-		        <img src="<?php echo $this->webroot;?>files/<?php echo $value['Application']['logo'] ?>">
-		      </div>
+		      <div class="item" style="background-image:url('<?php echo $this->webroot;?>files/<?php echo $value['Application']['logo'] ?>');">
+		        <!-- <img src="<?php echo $this->webroot;?>files/<?php echo $value['Application']['logo'] ?>"> -->
 		      </div>
 	    	<?php } ?>
 	    </div>
-  	<p class="animated over">Over <b>$5,000,000</b> given back to schools!</p>
+  		<p class="animated over">Over <b>$5,000,000</b> given back to schools!</p>
 	   </div>
-
-
-	<!-- </div> -->
-
-	<!-- <div id="plan_sect">
-		<img class="animated" id="steps" src="<?php echo $this->webroot; ?>img/steps.png">
-	</div> -->
 		<div id="plan_btn">
 			<button class="btn_clubs orange_trans" onclick="window.location.href='<?php echo $this->webroot;?>apply'">APPLY HERE NOW</button>
 		</div>
