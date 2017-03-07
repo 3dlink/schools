@@ -33,6 +33,7 @@ class ContentsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		// Comentario para git
 		$this->layout="admin";
 		if (!$this->Content->exists($id)) {
 			throw new NotFoundException(__('Invalid Content'));
