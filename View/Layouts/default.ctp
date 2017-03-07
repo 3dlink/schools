@@ -67,8 +67,8 @@
 		</div>
 
 		<script type="text/javascript">
-		$( window ).load(function() {
-          $(".loader").css("display", 'none');
+			$( window ).load(function() {
+        $(".loader").css("display", 'none');
       });
 
 			$('#burger').click(function(event) {

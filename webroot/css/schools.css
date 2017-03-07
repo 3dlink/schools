@@ -233,6 +233,7 @@ body {
    width: 100%;
    height: 100%;
    z-index: 10000;
+   /*background-image: url('../img/loading_fondo.png');*/
    background: url('../img/loading.gif') 50% 50% no-repeat black ;
 }
 
@@ -1097,7 +1098,9 @@ to{opacity: 1;}
 	padding: 0 10%;
 }
 
-
+/*:-webkit-any(#title_zv) {
+    margin: 0 !important;
+}*/
 
 
 
